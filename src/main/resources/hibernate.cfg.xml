@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- PostgreSQL Driver -->
+        <property name="hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+
+
+        <!-- Database URL -->
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://localhost:5432/employee_payroll
+        </property>
+
+
+        <!-- Database Username -->
+        <property name="hibernate.connection.username">
+            postgres
+        </property>
+
+
+        <!-- Database Password -->
+        <property name="hibernate.connection.password">
+            Yogi@180523
+        </property>
+
+
+        <!-- PostgreSQL Dialect -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
+
+
+        <!-- Show SQL in console -->
+        <property name="hibernate.show_sql">
+            true
+        </property>
+
+
+        <!-- Format SQL -->
+        <property name="hibernate.format_sql">
+            true
+        </property>
+
+
+        <!-- Automatically update tables -->
+        <property name="hibernate.hbm2ddl.auto">
+            update
+        </property>
+
+    </session-factory>
+
+</hibernate-configuration>
